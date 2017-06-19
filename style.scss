@@ -1,0 +1,341 @@
+body {
+	background-color: black;
+	/*height: 1000px;*/
+}
+
+#stickybar {
+	/*border: 1px solid red;*/
+	top: 0;
+	width: 100%;
+	position: fixed;
+	background-color: black;
+	height: 70px;
+	z-index: 1;
+}
+
+.stickybarscrolled {
+	background-color: white;
+}
+#navbar {
+	float: right;
+	display: inline-block;
+	width: 530px;
+	/*border: 1px solid red;*/
+	text-align: right;
+	/*display: visible;*/
+}
+
+/*SMALLER VIEWPORT*/
+#popoutnav {
+	height: 200px;
+	width: 200px;
+	display: table-caption;
+	background-color: black;
+	border: 1px solid grey;
+	float: right;
+	margin-left: 38px;
+	display: none;
+}
+
+#popout {
+	border: 1px solid grey;
+	font-size: 57px;
+}
+
+.popout{
+	border:1px solid grey;
+	font-size: 57px;
+	text-align: center;
+}
+
+.popout:hover {
+	background-color: grey;
+}
+#menu_icon {
+	float: right;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-image: url('assets/navbaricon.png');
+	background-size: cover;
+	/*border:1px solid red;*/
+	margin: 16px;
+	display: none;
+}
+
+#menu_icon_wrapper {
+	height: 60px;
+	width: 80px;
+	float: right;
+	display: none;
+
+}
+
+#menu_icon_wrapper:hover ~ #popoutnav {
+	display: block;
+}
+
+#popoutnav:hover {
+	display: block;
+}
+
+li, a.nav, #namelogo {
+	letter-spacing: 2px;
+	font-size: 15px;
+	text-decoration: none;
+	list-style-type: none;
+	display: inline-block;
+	font-family: 'Abel', sans-serif;
+	margin: 0 19px;
+	color: #da9edc;
+	position: relative;
+}
+
+
+#namelogo {
+	float: left;
+	display: inline-block;
+	/*border: 1px solid red;*/
+	width: 150px;
+	margin: 22px 40px;
+	font-style: italic;
+}
+
+
+#aboutme {
+	height: 20px;
+	width: 20px;
+	background-image: url('assets/menu_about-me_icon.png');
+	background-size: cover;
+	position: absolute;
+	float: right;
+	border: 0;
+	left: -27px;
+	bottom: -3px;
+	/*border: 1px solid red;*/
+}
+
+#experience {
+	height: 20px;
+	width: 20px;
+	background-image: url('assets/menu_experience_icon.png');
+	background-size: cover;
+	position: absolute;
+	float: right;
+	border: 0;
+	left: -27px;
+	bottom: -3px;
+}
+
+#skills {
+	height: 18px;
+	width: 18px;
+	background-image: url('assets/menu_skills_icon.png');
+	background-size: cover;
+	position: absolute;
+	float: right;
+	border: 0;
+	left: -26px;
+	bottom: -1px;
+}
+
+#aboutmelink:hover #aboutme {
+	background-image: url('assets/menu_about-me_icon_glow.png');
+}
+
+a.nav:hover{
+	text-decoration: line-through;
+	text-shadow: 3px 0px 20px pink;
+}
+
+#namelogo:hover {
+	text-shadow: 3px 0px 20px pink;
+	font-style: italic;
+}
+
+#experiencelink:hover #experience {
+	background-image: url('assets/menu_experience_icon_glow.png');
+}
+
+#skillslink:hover #skills {
+	background-image: url('assets/menu_skills_icon_glow.png');
+}
+
+#fffbox {
+	background-image: url('assets/fffbox_1.png');
+	background-size: cover;
+	height: 400px;
+	width: 400px;
+	/*border: 1px solid red;*/
+	margin: 150px auto;
+	-webkit-animation: glow 8s infinite; 
+	-moz-animation: glow 8s infinite;
+	-o-animation: glow 8s infinite;
+	animation: glow 8s inifinte ; /*IE10 */
+}
+
+@keyframes glow {
+
+20% {background-image: url('assets/fffbox_fab.png');}
+40% {background-image: url('assets/fffbox_fit.png');}
+60% {background-image: url('assets/fffbox_fun.png');}
+70% {background-image: url('assets/fffbox_off.png');}
+77% {background-image: url('assets/fffbox_on.png');}
+84% {background-image: url('assets/fffbox_off.png');}
+91% {background-image: url('assets/fffbox_on.png');}
+}
+
+#introtext {
+	width: 70%;
+	background-color: #da9edc;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: .8em;
+	margin: 0 auto;
+	position: relative;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+#introtext-inner {
+	width: auto;
+	margin: 0 auto;
+	background-color: #f49ac1;
+	margin: 0.1em;
+	text-align: center;
+	position: relative;
+	padding: 25px;
+	border-radius: 10px;
+}
+
+#coder_image {
+	background-image: url('assets/codinggirl_icon.png');
+	background-size: cover;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+#aboutmegraphic {
+	background-image: url('assets/aboutme_graphic.png');
+	width: 37em;
+	background-size: cover;
+	height: 30em;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+
+#experiencetext, #educationtext {
+	width: 30%;
+	margin: 20px auto;
+	background-color: #f49ac1;
+	border-radius: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	padding: 15px;
+	padding-bottom: 40px;
+	margin-top: 70px;
+	font-size: 18px;
+	border: 10px solid white;
+}
+
+#experiencetext {
+	float: left;
+	margin-left: 13%;
+}
+
+#educationtext {
+	float: right;
+	margin-right: 13%;
+}
+
+.italic {
+	font-style: italic;
+}
+
+#caledu, #chateau {
+	margin-top: 20px;
+}
+
+#gradcap, #briefcase {
+	margin: 0 auto;
+
+}
+
+#gradcap {
+	background-image: url('assets/graduationcap.png');
+	background-size: cover;
+	height: 5em;
+	width: 5em;
+	margin-bottom: 15px;
+}
+
+#briefcase {
+	background-image: url('assets/briefcase.png');
+	background-size: cover;
+	height: 4em;
+	width: 4em;
+	margin-bottom: 15px;
+}
+
+#skills_section {
+	background-image: url('assets/skills_list.png');
+	background-size: cover;
+	width: auto;
+	margin: 0 auto;
+	height: 1010px;
+	clear: both;
+	margin-top: 50px;
+	padding: 300px;
+}
+/*SCREEN AFTER 768PX*/
+@media only screen and (max-width: 840px) {
+
+	#navbar {
+		display: none !important;
+	}
+
+	#menu_icon {
+		display: block;
+	}
+
+	#menu_icon_wrapper {
+		display: inline-block;
+	}
+
+	#aboutmegraphic {
+		/*background-color: grey;*/
+		width: 18em;
+		background-size: cover;
+		height: 15em;
+		margin: 0 auto;
+		margin-top: 18%;
+	}
+
+	#educationtext, #experiencetext {
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 10%;
+		float: none;
+	}
+}
+
+@media only screen and (min-width: 599px) and (max-width: 1000px) {
+	#skills_section {
+		height: 20em;
+	}
+}
+@media only screen and (min-width: 451px) and (max-width: 598px) {
+	#skills_section {
+		height: 8em;
+		padding: 15em;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	#skills_section {
+		height: 7em;
+		padding: 15em;
+	}
+}
