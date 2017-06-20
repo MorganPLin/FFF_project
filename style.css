@@ -339,3 +339,21 @@ a.nav:hover{
 		padding: 15em;
 	}
 }
+
+#skills_text {
+	color: #f49ac1;
+	width: 40%;
+	margin: 0 auto;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	border: 1px solid #f49ac1;
+	margin-top: 30%;
+	clear: both;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+h1.skills {
+	text-align: center;
+
+}
